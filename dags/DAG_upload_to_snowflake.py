@@ -2,7 +2,6 @@ from airflow import DAG
 from datetime import datetime, timedelta
 from airflow.operators.python import PythonVirtualenvOperator
 
-
 #Functions
 def upload_matches_to_snowflake():
     import re
@@ -135,9 +134,6 @@ def upload_matches_to_snowflake():
     conn.close()
     cursor.close()
     engine.dispose()
-
-
-
 
 def fetch_item_info():
     import pandas as pd
