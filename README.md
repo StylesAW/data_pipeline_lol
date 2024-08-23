@@ -31,7 +31,6 @@ astro deploy
 ## DAG code
 ```python
 from airflow import DAG
-from datetime import datetime, timedelta
 from airflow.operators.python import PythonVirtualenvOperator
 #setting args
 default_args = {
