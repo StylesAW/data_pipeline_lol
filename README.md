@@ -1,9 +1,38 @@
 # Data_pipeline_lol
 This project automates the extraction, transformation, and loading (ETL) of League of Legends statistics using Python and SQL. The pipeline is orchestrated with Apache Airflow via Astronomer, and the data is stored in Snowflake for analysis. The process ensures up-to-date, clean data ready for reporting and visualization.
 
+## Setup
+### **Overview**
+This project involves deploying a Python script along with a Directed Acyclic Graph (DAG) to Astronomer. The configuration includes setting up a virtual environment with specific dependencies to ensure the proper execution of the DAG.
+
+### **Prerequisites**
+Before setting up the project, ensure you have the following:
+
+- **Docker**: Installed and running. You can download it from the [Docker website](https://www.docker.com/products/docker-desktop).
+- **Astronomer CLI**: Installed and configured. You can download it from the [Astronomer website](https://www.astronomer.io/docs/cli).
+- **Python 3.8+**: Ensure Python is installed on your system.
+- **Airflow**: Make sure Airflow is correctly set up in your Astronomer environment.
+
+## Setup Instructions
+
+1. **Clone the Repository**
+
+2. Configure your Astronomer environment. You can do this through the Astronomer by using the Astronomer CLI. Ensure you have set up your Astronomer workspace and project:
+    - CLI: Use commands such as astro workspace create, astro project init, and astro dev init to configure your environment. For detailed instructions, refer to the [Astronomer CLI documentation](https://www.astronomer.io/docs/astro/cli/overview).
+
+3. Deploy the DAG to Astronomer
+Ensure the DAG file and script are correctly placed in the dags/ directory of your Astronomer project. Then, use the Astronomer CLI to deploy:
+
+```bash
+astro deploy
+```
+   
 ℹ️ **Additional Information:** The script code is included within the same Python file as the DAG. This approach was necessary due to the requirement for a separate virtual environment with distinct dependencies to ensure compatibility with the libraries used. To achieve this, I utilized the VirtualenvOperator, which allows for the creation and management of isolated Python environments within Airflow. This setup ensures that all dependencies are properly managed and conflicts are avoided, facilitating a more robust and maintainable workflow.
+## DAG code
 ```python
-DAG
+from airflow import DAG
+from datetime import datetime, timedelta
+from airflow.operators.python import PythonVirtualenvOperator
 #setting args
 default_args = {
     'owner': 'airflow',
