@@ -289,3 +289,5 @@ def upload_champs_to_snowflake():
 
 #if __name__ == "__main__":
     #upload_matches_to_snowflake()
+    #upload_items_to_snowflake()
+    #upload_champs_to_snowflake()
