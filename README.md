@@ -1,6 +1,17 @@
 # Description
 This project automates the extraction, transformation, and loading (ETL) of League of Legends statistics using Python and SQL. The pipeline is orchestrated with Apache Airflow via Astronomer, and the data is stored in Snowflake for analysis. The process ensures up-to-date, clean data ready for reporting and visualization.
 
+This project was created for learning purposes. Please note that some resources might not be available in the future, as free trials or limited-time access were used during the development.
+
+## What is League of Legends?
+
+League of Legends (LoL) is one of the most popular video games in the world, generating significant revenue; for instance, in 2020, it earned over $1.75 billion. The game is extremely competitive, featuring battles between two teams of five real players each, where every detail matters—including data. Data plays a crucial role in any field, and LoL is no exception. Players are keenly aware of statistics and percentages that can give them the best possible options in their gameplay.
+
+Given the importance of data, this project aims to explore various data aspects within League of Legends, focusing on a specific player named "Styles." The project analyzes data related to Styles' matches, the champions he uses, the items he purchases in-game, and more. By delving into this data, the project explains valuable insights into the strategic elements of gameplay, helping to understand the impact of choices made during matches.
+
+Through this project, I aim to learn valuable lessons about data analysis and its applications, especially in highly competitive environments like League of Legends. Therefore, the main purpose of this project is to learn as much as possible from different technologies, tools, etc.
+
+
 ## Setup
 ### **Overview**
 This project involves deploying a Python script along with a Directed Acyclic Graph (DAG) to Astronomer. The configuration includes setting up a virtual environment with specific dependencies to ensure the proper execution of the DAG.
@@ -12,6 +23,7 @@ Before setting up the project, ensure you have the following:
 - **Astronomer CLI**: Installed and configured. You can download it from the [Astronomer website](https://www.astronomer.io/docs/cli).
 - **Python 3.8+**: Ensure Python is installed on your system.
 - **Airflow**: Make sure Airflow is correctly set up in your Astronomer environment.
+- **Tableau**: You can use it Web or installed on your system to visualize the data analysis results. You can download it from the [Tableau website](https://www.tableau.com/).
 
 ## Setup Instructions
 
@@ -123,3 +135,6 @@ Use: "astro deploy" command once you have created an account and connected to As
 
 ### Dashboard using Tableu
 ![](images/Dashboard_Tableu_Lol.webp)
+
+https://us-east-1.online.tableau.com/t/stylescuentasb9a46c802a/views/DashBoardLOL/Dashboard1/2113e944-6b6f-4869-831c-ea2506b0c715/96dd4e94-f3b1-4fb3-9b5c-12a8c1dd80ae
+
