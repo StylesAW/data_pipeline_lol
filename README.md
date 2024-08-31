@@ -133,7 +133,7 @@ Use: "astro deploy" command once you have created an account and connected to As
 ### Champs
 ![](images/loaded_data_snowflake_champs.png)
 
-### Dashboard using Tableu
+# Dashboard using Tableu
 
 ## Dashboard Overview
 I developed a dashboard by connecting Tableau with Snowflake, where data is kept up to date through the automation of Airflow. This dashboard includes interesting test features that demonstrate the correct functioning of this project. However, once the data is in Tableau, there are many more possibilities for analysis and visualization. This dashboard serves as a small and simple example of what can be achieved.
