@@ -120,3 +120,6 @@ Use: "astro deploy" command once you have created an account and connected to As
 ![](images/loaded_data_snowflake_items.png)
 ### Champs
 ![](images/loaded_data_snowflake_champs.png)
+
+### Dashboard using Tableu
+![](images/Dashboard_Tableu_Lol.webp)
