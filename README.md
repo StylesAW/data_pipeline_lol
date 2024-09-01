@@ -1,5 +1,5 @@
 # Description
-This project automates the extraction, transformation, and loading (ETL) of League of Legends statistics using Python and SQL. The pipeline is orchestrated with Apache Airflow via Astronomer, and the data is stored in Snowflake for analysis. The process ensures up-to-date, clean data ready for reporting and visualization by means of tableu dashboards (These dashboards will stay updated through the pipeline).
+This project automates the extraction, transformation, and loading (ETL) of League of Legends statistics using Python and SQL. The pipeline is orchestrated with Apache Airflow via Astronomer, and the data is stored in Snowflake for analysis. The process ensures up-to-date, clean data ready for reporting and visualization by means of tableu dashboards **(These dashboards will stay updated through the pipeline).**
 
 This project was created for learning purposes. Please note that some resources might not be available in the future, as free trials or limited-time access were used during the development.
 
@@ -136,7 +136,7 @@ Use: "astro deploy" command once you have created an account and connected to As
 # Dashboard using Tableu
 
 ### **Dashboard Overview**
-I developed a dashboard by connecting Tableau with Snowflake, where data is kept up to date through the automation of Airflow. This dashboard includes interesting test features that demonstrate the correct functioning of this project. However, once the data is in Tableau, there are many more possibilities for analysis and visualization. This dashboard serves as a small and simple example of what can be achieved and will stay updated through the pipeline that uses Airflow and is connected to Snowflake.
+I developed a dashboard by connecting Tableau with Snowflake, where data is kept up to date through the automation of Airflow. This dashboard includes interesting test features that demonstrate the correct functioning of this project. However, once the data is in Tableau, there are many more possibilities for analysis and visualization. This dashboard serves as a small and simple example of what can be achieved and **will stay updated through the pipeline that uses Airflow and is connected to Snowflake.**
 
 ![](images/Dashboard_Tableu_Lol.webp)
 
