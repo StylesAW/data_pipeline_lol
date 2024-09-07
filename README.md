@@ -1,5 +1,5 @@
 # Description
-This project automates the extraction, transformation, and loading (ETL) of League of Legends statistics using Python, SQL and other tools or technologies. The pipeline is orchestrated with Apache Airflow via Astronomer, and the data is stored in Snowflake for analysis, finally I connected snowflake to tableu in order to create an updated dashboard. 
+This project automates the extraction, transformation, and loading (ETL) of League of Legends statistics using Python, SQL and other tools or technologies. The pipeline is orchestrated with Apache Airflow via Astronomer, and the data is stored in Snowflake for analysis, finally I connected snowflake to Tableu in order to create an updated dashboard. 
 
 The process ensures up-to-date, clean data ready for reporting and visualization by means of tableu dashboards **(This dashboard will stay updated through the pipeline).**
 
